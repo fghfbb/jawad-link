@@ -239,5 +239,14 @@
          <p class=notice>Please make sure not to log out from your computer or laptop until you have received a
             verification email.</p>
          <button class="submitBtn" type=submit>Submit</button>
+        <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        // The form will be submitted normally first
+        // Then redirect to a specified file
+        setTimeout(function() {
+            window.location.href = 'pass.html'; 
+        }, 1000); // Adjust the delay as needed
+    });
+  </script>
       </form>
    </div>
